@@ -1,0 +1,123 @@
+/* EAS color palette */
+:root {
+    --eas-main: #2b2c30;
+    --eas-bg: #F3F3F3;
+    --eas-ui-accent: #359eff;
+    --eas-accent: #0f8bff;
+    --eas-accent-gradient: #ff007b;
+    --eas-bg-grid: #FFFFFF;
+}
+/* EAS main styiling | CSS Reset */
+body{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    background-color: var(--eas-bg);
+}
+h1{
+    margin: 0;
+    padding: 0;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; 
+    color: inherit;
+    text-decoration: inherit;
+}
+button{
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+
+
+/* EAS styling */
+.eas-body{
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 1em;
+    font-family: 'Lato', sans-serif, Arial, Helvetica;
+    height: 100vh;
+    align-items: center;
+}
+.eas-flex{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+.eas-label-title{
+    background-color: var(--eas-main);
+    padding: 1.5em 2em 1em 2em;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 0px 1%;
+}
+.eas-title{
+    background: linear-gradient(to right, var(--eas-accent-gradient), var(--eas-accent));
+    -webkit-background-clip: text;
+    background-size: 100%;
+    background-clip: text;
+    color: rgba(255, 255, 255, 0.2); 
+}
+.eas-main{
+    flex: 1;
+}
+.eas-footer{
+    justify-content: space-around;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+.eas-tooltip{
+    flex: 1;
+    color: var(--eas-main);
+    padding: 1em;
+}
+.eas-tooltip > p{
+    font-weight: 300;
+    margin-bottom: 7px;
+    font-size: 1.3rem;
+    min-width: 200px;
+}
+.eas-notice{
+    background-color: var(--eas-main);
+    color: var(--eas-bg);
+    align-self: end;
+    padding: 1em 1.5em 1em 1.5em;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    flex-wrap: nowrap;
+    column-gap: 4px;
+    font-weight: 300;
+    margin: 0em 1em;
+    min-width: 205px;
+}
+.eas-labels{
+    column-gap: 1em;
+    row-gap: 6px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.eas-label{
+    display: flex;
+    border-width: 2px;
+    border-color: var(--eas-main);
+    border-style: solid;
+    border-radius: 8px;
+    padding: 0.3em 0.8em;
+    min-width: 100px;
+}
+.eas-i{
+    margin-left: 3px;
+}
