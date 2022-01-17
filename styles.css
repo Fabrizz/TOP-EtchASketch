@@ -18,6 +18,10 @@ h1{
     margin: 0;
     padding: 0;
 }
+h3{
+    margin: 0;
+    padding: 0;
+}
 p{
     padding: 0;
     margin: 0;
@@ -29,7 +33,7 @@ a{
     color: inherit;
     text-decoration: inherit;
 }
-button{
+button, input[type='color']{
 	background: none;
 	color: inherit;
 	border: none;
@@ -37,9 +41,13 @@ button{
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+    -webkit-appearance: none;
 }
-
-
+input[type='color']{
+    width: 30px;
+    height: 30px;
+    display: block;
+}
 
 /* EAS styling */
 .eas-body{
@@ -62,7 +70,7 @@ button{
     border-bottom-right-radius: 20px;
     font-weight: 700;
     font-size: 1.2rem;
-    margin: 0px 1%;
+    margin: 0px 1em;
 }
 .eas-title{
     background: linear-gradient(to right, var(--eas-accent-gradient), var(--eas-accent));
@@ -70,9 +78,6 @@ button{
     background-size: 100%;
     background-clip: text;
     color: rgba(255, 255, 255, 0.2); 
-}
-.eas-main{
-    flex: 1;
 }
 .eas-footer{
     justify-content: space-around;
@@ -120,4 +125,126 @@ button{
 }
 .eas-i{
     margin-left: 3px;
+}
+.eas-main{
+    flex: 1;
+    padding-top: 1em;
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 2em;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1em;
+}
+.eas-grid{
+    display: grid;
+    display: -ms-grid;
+    width: 500px;
+    height: 500px;
+    min-width: 500px;
+}
+.eas-card{
+    width: 250px;
+}
+.eas-config{
+    background-color: var(--eas-bg-grid);
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0px;
+    padding: 0.2em 1.2em;
+    min-width: 212px;
+}
+.eas-configtext{
+    margin-top: 25px;
+}
+.eas-configtext > p{
+    font-weight: 300;
+    font-size: 1.2rem;
+    padding-bottom: 6px;
+}
+.eas-configtext > h3{
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.eas-buttons{
+    display: flex;
+    font-weight: 300;
+    font-size: 1.2rem;
+    gap: 5px;
+    padding: 0.5em;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: var(--eas-main);
+    border-width: 2px;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5em 0em;
+    transition: 0.5s;
+}
+.eas-buttons:hover{
+    background: var(--eas-main);
+    color: var(--eas-bg);
+}
+.eas-configlist-item:hover{
+    background: var(--eas-main);
+    color: var(--eas-bg);
+}
+.eas-configlist-item:hover > .eas-configlist-chevron{
+    background: var(--eas-main);
+}
+.eas-configlist-item-first{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.eas-configlist-item-third{
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.eas-configlist{
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0.5em 0em;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: var(--eas-main);
+    border-width: 2px;
+}
+.eas-configlist-item{
+    display: flex;
+    font-weight: 300;
+    font-size: 1.2rem;
+    align-items: center;
+    padding: 0.5em 0.5em 0.5em 0px;
+    column-gap: 10px;
+}
+.eas-configlist-icon{
+    padding-left: 0.2em;
+    /*padding-left: 0.5em;
+    margin-left: 7px;*/
+}
+.eas-barlist{
+    background-color: var(--eas-main);
+    height: 1px;
+}
+.eas-configlist-chevron{
+    background: var(--eas-bg-grid);
+    height: 1em;
+    width: 5px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.eas-sizing{
+    margin: 0.5em 0em;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: var(--eas-main);
+    border-width: 2px;
+    padding: 0.5em;
+}
+.eas-size{
+    cursor: pointer;
+    padding-left: 6px;
+    padding-right: 6px;
 }
