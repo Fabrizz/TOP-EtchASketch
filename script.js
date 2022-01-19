@@ -32,6 +32,9 @@ interactSliderSize.addEventListener('input', (e) => { // Update the size info di
 interactColorPicker.addEventListener('input', (e) => { // Update the selected color
     config.currentColor = interactColorPicker.value;
 });
+interactColorPicker.addEventListener('touchend', (e) => { // Update the selected color || For touch interfaces
+    config.currentColor = interactColorPicker.value;
+});
 
 interactListColor.addEventListener('click', () => {
     config.colorMode = 0;
