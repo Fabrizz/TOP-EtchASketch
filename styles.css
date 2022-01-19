@@ -141,8 +141,44 @@ input[type='color']{
     display: -ms-grid;
     width: 500px;
     height: 500px;
-    min-width: 500px;
 }
+@media (min-width: 1000px) and (min-height: 800px) {
+  .eas-grid {
+    width: 600px;
+    height: 600px;
+  }
+}
+@media (max-height: 550px){
+  .eas-grid {
+    width: 450px;
+    height: 450px;
+  }
+}
+@media (max-width: 500px) {
+  .eas-grid {
+    width: 450px;
+    height: 450px;
+  }
+}
+@media (max-width: 450px) {
+  .eas-grid {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media (max-width: 400px) {
+  .eas-grid {
+    width: 350px;
+    height: 350px;
+  }
+}
+@media (max-width: 350px) {
+  .eas-grid {
+    width: 300px;
+    height: 300px;
+  }
+}
+
 .eas-card{
     width: 250px;
 }
