@@ -61,7 +61,6 @@ function updateGrid(size){
     mpGridSize.innerText = `${size} x ${size}`;
     mpGrid.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
     mpGrid.style.gridTemplateRows = `repeat(${size}, 1fr)`;
-    console.log(size);
 
     for (let i = 0; i < size*size; i++){
         const  gridChild = document.createElement('span');
@@ -72,7 +71,6 @@ function updateGrid(size){
 }
 
 function painter(e){
-    console.log(e);
     e.target.style.backgroundColor = painterColor();
     e.target.classList.add('eas-modified');
 }
