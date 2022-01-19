@@ -83,6 +83,7 @@ input[type='color']{
     justify-content: space-around;
     align-self: stretch;
     flex-wrap: wrap;
+    align-items: flex-end;
 }
 .eas-tooltip{
     flex: 1;
@@ -98,11 +99,9 @@ input[type='color']{
 .eas-notice{
     background-color: var(--eas-main);
     color: var(--eas-bg);
-    align-self: end;
     padding: 1em 1.5em 1em 1.5em;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    flex-wrap: nowrap;
     column-gap: 4px;
     font-weight: 300;
     margin: 0em 1em;
@@ -137,46 +136,60 @@ input[type='color']{
     row-gap: 1em;
 }
 .eas-grid{
-    display: grid;
     display: -ms-grid;
+    display: grid;
     width: 500px;
     height: 500px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+@media (min-width: 400px) {
+    .eas-buttons:hover{
+    background: var(--eas-main);
+    color: var(--eas-bg);
+    }
+    .eas-configlist-item:hover{
+        background: var(--eas-main);
+        color: var(--eas-bg);
+    }
+    .eas-configlist-item:hover > .eas-configlist-chevron{
+        background: var(--eas-main);
+    }
 }
 @media (min-width: 1000px) and (min-height: 800px) {
-  .eas-grid {
-    width: 600px;
-    height: 600px;
-  }
+    .eas-grid {
+        width: 600px;
+        height: 600px;
+    }
 }
 @media (max-height: 550px){
-  .eas-grid {
-    width: 450px;
-    height: 450px;
-  }
+    .eas-grid {
+        width: 450px;
+        height: 450px;
+    }
 }
 @media (max-width: 500px) {
-  .eas-grid {
-    width: 450px;
-    height: 450px;
-  }
+    .eas-grid {
+        width: 450px;
+        height: 450px;
+    }
 }
 @media (max-width: 450px) {
-  .eas-grid {
-    width: 400px;
-    height: 400px;
-  }
+    .eas-grid {
+        width: 400px;
+        height: 400px;
+    }
 }
 @media (max-width: 400px) {
-  .eas-grid {
-    width: 350px;
-    height: 350px;
-  }
+    .eas-grid {
+        width: 350px;
+        height: 350px;
+    }
 }
 @media (max-width: 350px) {
-  .eas-grid {
-    width: 300px;
-    height: 300px;
-  }
+    .eas-grid {
+        width: 300px;
+        height: 300px;
+    }
 }
 
 .eas-card{
@@ -191,6 +204,7 @@ input[type='color']{
     gap: 0px;
     padding: 0.2em 1.2em;
     min-width: 212px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 .eas-configtext{
     margin-top: 25px;
@@ -218,17 +232,6 @@ input[type='color']{
     justify-content: center;
     margin: 0.5em 0em;
     transition: 0.5s;
-}
-.eas-buttons:hover{
-    background: var(--eas-main);
-    color: var(--eas-bg);
-}
-.eas-configlist-item:hover{
-    background: var(--eas-main);
-    color: var(--eas-bg);
-}
-.eas-configlist-item:hover > .eas-configlist-chevron{
-    background: var(--eas-main);
 }
 .eas-configlist-item-first{
     border-top-left-radius: 12px;
